@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+    border: 1px solid powderblue;
+    padding: 30px;
+    margin: 50px;
+}
+    </style>
+    
+</head>
+<body class="p">
+    <table style="width:50%">
+<tr>
+<th>Firstname</th>
+<th>Lastname</th> 
+<th>Age</th>
+</tr>
+<tr>
+<td>Jill</td>
+<td>Smith</td> 
+<td>50</td>
+</tr>
+<tr>
+<td>Eve</td>
+<td>Jackson</td> 
+<td>94</td>
+</tr>
+</table>
+<ul style="list-style-type:disc">
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ul> 
+<ol> 
+<li>Coffee</li> 
+<li>Tea</li> 
+<li>Milk</li> 
+</ol> 
+
+
+<form>
+  First name:<br>
+<input type="text" name="firstname"><br>
+  Last name:<br>
+<input type="text" name="lastname">
+</form> 
+
+<form action="">
+    Cars :<br>
+
+<select name="cars">
+<option value="volvo">Volvo</option>
+<option value="saab">Saab</option>
+<option value="fiat">Fiat</option>
+<option value="audi">Audi</option>
+</select>
+</form>
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+<br>
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+<br>
+<form action="/action_page.php">
+  First name:<br>
+<input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+<input type="text" name="lastname" value="Mouse"><br><br>
+<input type="submit" value="Submit">
+</form> 
+<br>
+
+<form>
+<input type="radio" name="gender" value="male" checked> Male<br>
+<input type="radio" name="gender" value="female"> Female<br>
+<input type="radio" name="gender" value="other"> Other
+</form> 
+<br>
+
+<form>
+<input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+<input type="checkbox" name="vehicle2" value="Car"> I have a car 
+</form> 
+<br>
+
+
+<div class="form-container">
+        <h2>Student Registration Form</h2>
+        
+        <form action="#" method="POST">
+            
+            <div class="form-group">
+                <label for="studentName">Student Name</label>
+                <input type="text" id="studentName" name="studentName" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="studentId">Student ID</label>
+                <input type="text" id="studentId" name="studentId" placeholder="Enter your ID" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter phone number">
+            </div>
+
+            <div class="form-group">
+                <label for="department">Department</label>
+                <select id="department" name="department" required>
+                    <option value="" disabled selected>-- Select Department --</option>
+                    <option value="cse">CSE</option>
+                    <option value="eee">EEE</option>
+                    <option value="bba">BBA</option>
+                    <option value="english">English</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="options-group">
+                    <label class="option-item">
+                        <input type="radio" name="gender" value="male" required>
+                        Male
+                    </label>
+                    <label class="option-item">
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </label>
+                    <label class="option-item">
+                        <input type="radio" name="gender" value="other">
+                        Other
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Skills</label>
+                <div class="options-group">
+                    <label class="option-item">
+                        <input type="checkbox" name="skills" value="html">
+                        HTML
+                    </label>
+                    <label class="option-item">
+                        <input type="checkbox" name="skills" value="css">
+                        CSS
+                    </label>
+                    <label class="option-item">
+                        <input type="checkbox" name="skills" value="javascript">
+                        JavaScript
+                    </label>
+                    <label class="option-item">
+                        <input type="checkbox" name="skills" value="python">
+                        Python
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create password" required>
+                <input type="password" id="password" name="password" placeholder="Confrom password" required>
+
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn-submit">Submit</button>
+                <button type="reset" class="btn-reset">Reset</button>
+            </div>
+
+        </form>
+
+        </div>
+
+        <p id="demo">A Paragraph</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+
+<h2>বৃে র পিরিধ বর কেরা</h2> 
+    <input type="number" id="radius" placeholder="Radius "> 
+    <button onclick="calculate()">Calculate</button> 
+    <p id="result"></p> 
+
+    <script>
+        //alert('hello World')
+       
+function myFunction() {
+   document.getElementById("demo").innerHTML =  5 + 9;
+   //document.write(5 + 6);
+   window.alert(5 + 6);
+   console.log(5+7);
+   
+
+}
+
+
+ function calculate() { 
+            var r = document.getElementById("radius").value; 
+            var c = 2 * 3.1416 * r; 
+            document.getElementById("result").innerHTML = "Circumference = " + c }
+        
+    </script>
+</body>
+</html>
