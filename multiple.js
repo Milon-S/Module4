@@ -7,3 +7,4 @@ if (salary > 20000 && height > 60) {
 } else {
     console.log('Onno Pattro Khuji')
 }
+
