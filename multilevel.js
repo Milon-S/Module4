@@ -2,7 +2,7 @@
  * MULTI_LEVEL CONDITION
  */
 
-const price = 2000;
+const price = 2600;
 if(price >= 5000){
     // 10% discount
     const discount = price * 10/100;
